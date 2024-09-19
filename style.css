@@ -253,22 +253,7 @@ body.blue #line-progress {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce7744', endColorstr='#e67d24',GradientType=1 );
 }
 
-/* --- SOURCE --- */
 
-#inspiration {
-	position:fixed;
-	bottom:0;
-	width:100%;
-	text-align:center;
-	padding:15px;
-	font-size:11px;
-	color:#bbb;
-	background:#333;
-}
-
-#inspiration a {
-	color:#777;
-}
 
 .process-container {
     display: flex;
@@ -276,13 +261,12 @@ body.blue #line-progress {
     flex-direction: row;
 }
 .survey-card,
-.pre-survey-card {
+.pre-survey-card  {
     padding: 50px 20px;
     margin: 10px;
 }
-.pre-survey-card { width: 33%;}
-.survey-card {width: 33%;}
 
-.discovery, .pre-survey-card, .survey-card {
+
+.discovery, .pre-survey-card, .survey-card, .decision {
     background: #f3f3f3f3;
 }
