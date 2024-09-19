@@ -272,14 +272,17 @@ body.blue #line-progress {
 
 .process-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
 }
+.survey-card,
 .pre-survey-card {
     padding: 50px 20px;
     margin: 10px;
-    width: 33%;
 }
-.discovery, .pre-survey-card, .survey {
+.pre-survey-card { width: 33%;}
+.survey-card {width: 33%;}
+
+.discovery, .pre-survey-card, .survey-card {
     background: #f3f3f3f3;
 }

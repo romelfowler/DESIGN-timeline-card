@@ -79,26 +79,51 @@
             </div>
 
             <div class="section-content survey">
-                <h2>Creative Concepting</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+                <div class="process-container">
+                    <div class="survey-card">
+                        <img src="image/monitor.png" alt="monitor">
+                        <div class="pre-survey-title"><h2>Opening Conference</h2></div>
+                        <p>Surveyor introductions, 
+                            finalized survey agenda.</p>
+                    </div>
+                    <div class="survey-card">
+                        <img src="image/article.png" alt="article">
+                        <div class="pre-survey-title"><h2>On-site Survey</h2></div>
+                        <p>Register to access to ACHC customer portal</p>
+                    </div>
+                    <div class="survey-card">
+                        <img src="image/people.png" alt="people" srcset="">
+                        <div class="pre-survey-title"><h2>Closing Conference</h2></div>
+                        <p>Surveyor reviews general observations and findings provides feedback on experience.</p>
+                    </div>
+                    <div class="survey-card">
+                        <img src="image/people.png" alt="people" srcset="">
+                        <div class="pre-survey-title"><h2>Final Survey
+                            Report</h2></div>
+                        <p>Provided within 10 business days of the 
+                            last day of survey.</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="section-content production">
-                <h2>Production &amp; Execution</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+            <div class="section-content post-survey">
+                <div class="process-container">
+                    <div class="survey-card">
+                        <img src="image/monitor.png" alt="monitor">
+                        <div class="post-survey-title"><h2>Opening Conference</h2></div>
+                        <p>Surveyor introductions, 
+                            finalized survey agenda.</p>
+                    </div>
+                    <div class="survey-card">
+                        <img src="image/article.png" alt="article">
+                        <div class="post-survey-title"><h2>On-site Survey</h2></div>
+                        <p>Register to access to ACHC customer portal</p>
+                    </div>
+                
+                </div>
             </div>
 
-            <div class="section-content analysis">
+            <div class="section-content decision">
                 <h2>Ongoing Analysis &amp; Results</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
                     ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
@@ -108,14 +133,9 @@
                     orci.</p>
             </div>
 
-            <div class="section-content analysis">
+            <div class="section-content all">
                 <h2>Ongoing Analysis &amp; Results</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec neque justo, consequat non fermentum
-                    ac, tempor eu turpis. Proin nulla eros, placerat non ipsum ut, dapibus ullamcorper ex. Nulla in
-                    dapibus lorem. Suspendisse vitae velit ac ante consequat placerat ut sed eros. Nullam porttitor
-                    mattis mi, id fringilla ex consequat eu. Praesent pulvinar tincidunt leo et condimentum. Maecenas
-                    volutpat turpis at felis egestas malesuada. Phasellus sem odio, venenatis at ex a, lacinia suscipit
-                    orci.</p>
+               
             </div>
         </div>
     </div>
@@ -139,22 +159,22 @@
 
     $(".step03").click(function () {
         $("#line-progress").css("width", "40%");
-        $(".creative").addClass("active").siblings().removeClass("active");
+        $(".survey").addClass("active").siblings().removeClass("active");
     });
 
     $(".step04").click(function () {
         $("#line-progress").css("width", "60%");
-        $(".production").addClass("active").siblings().removeClass("active");
+        $(".post-survey").addClass("active").siblings().removeClass("active");
     });
 
     $(".step05").click(function () {
         $("#line-progress").css("width", "80%");
-        $(".analysis").addClass("active").siblings().removeClass("active");
+        $(".decision").addClass("active").siblings().removeClass("active");
     });
 
     $(".step06").click(function () {
         $("#line-progress").css("width", "100%");
-        $(".analysis").addClass("active").siblings().removeClass("active");
+        $(".all").addClass("active").siblings().removeClass("active");
     });
     $("#color").click(function () {
         $("body").toggleClass("blue")
