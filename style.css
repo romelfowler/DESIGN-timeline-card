@@ -265,7 +265,7 @@ body.blue #line-progress {
     padding: 50px 20px;
     margin: 10px;
 }
-
+.survey-card, .pre-survey-card {width:100%;}
 
 .discovery, .pre-survey-card, .survey-card, .decision {
     background: #f3f3f3f3;
