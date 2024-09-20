@@ -60,7 +60,7 @@ h1 {
 
 .process-wrapper {
 	margin:auto;
-	max-width:1080px;
+	max-width:100%;
 }
 
 #progress-bar-container {
@@ -110,7 +110,7 @@ h1 {
 	vertical-align:bottom;
 	height:60px;
 	position:relative;
-    transform: translateX(16px);
+    transform: translateX(25px);
 
 }
 
@@ -175,10 +175,8 @@ h1 {
 }
 
 #progress-content-section {
-	width:90%;
-	margin: auto;
-	/* background: #f3f3f3; */
-	border-radius: 4px;
+    width: 100%;
+    margin: auto;
 }
 
 #progress-content-section .section-content {
@@ -193,10 +191,13 @@ h1 {
 	letter-spacing:1px;
 }
 
-#progress-content-section .section-content p {
+#progress-content-section .section-content p, #progress-content-section .section-content ul {
 	font-size:15px;
 	line-height:1.8em;
 	color:#777;
+}
+#progress-content-section .section-content ul {
+    text-align: left;
 }
 
 #progress-content-section .section-content {
@@ -257,16 +258,21 @@ body.blue #line-progress {
 
 .process-container {
     display: flex;
+    columns: 4;
+    column-gap: 0;
     justify-content: center;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
+.discovery-card,
 .survey-card,
-.pre-survey-card  {
+.pre-survey-card,
+.post-survey-card,
+.decision-card  {
     padding: 50px 20px;
     margin: 10px;
 }
-.survey-card, .pre-survey-card {width:100%;}
+.discovery-card, .pre-survey-card, .survey-card, .post-survey-card, .decision-card {width:20%;}
 
-.discovery, .pre-survey-card, .survey-card, .decision {
+.discovery-card, .pre-survey-card, .survey-card, .post-survey-card, .decision-card {
     background: #f3f3f3f3;
 }
