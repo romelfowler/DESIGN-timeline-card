@@ -269,7 +269,7 @@ body.blue #line-progress {
 .post-survey-card,
 .decision-card  {
     padding: 50px 20px;
-    margin: 10px;
+    margin: 30px 10px;
     width: 20%;
     background: #f3f3f300;
     border: 2px solid #949494;
@@ -295,4 +295,21 @@ figcaption {
 .decision-card .fig-label {
     color: white;
     background: #AF74AD;
+}
+
+@media (max-width: 600px) {
+    .process-container {
+        flex-direction: column;
+    }
+    .discovery-card, .survey-card, .pre-survey-card, .post-survey-card, .decision-card {
+        padding: 50px 0;
+        margin: 30px auto;
+        width: 100%;
+        background: #f3f3f300;
+        border: 2px solid #949494;
+        position: relative;
+    }
+    #progress-bar-container li:before {display: none;}
+    #progress-bar-container li:after {margin-top:74px;}
+    #progress-bar-container ul {width: 90%;}
 }
